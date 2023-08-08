@@ -1,0 +1,7 @@
+{
+  "name": "TechWatch",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
