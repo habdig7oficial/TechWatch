@@ -14,8 +14,8 @@
   </ion-header>
 
   <div *ngIf="tecnologias.length >= 1; else notConnect">
-    <ion-list #Block *ngFor="let i of tecnologias">
-      <ion-item>{{ i.hello }}</ion-item>
+    <ion-list #Block *ngFor="let tecnologia of tecnologias, index as i">
+      <ion-item>{{ i }} - {{ tecnologia.nome }}</ion-item>
     </ion-list>
   </div>
 
