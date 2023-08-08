@@ -1,10 +1,14 @@
+import { Int, IntRange } from "./auxiliar"
 
 export interface aplicativo {
   nome: string,
-  nota: 1 | 2 | 3 
+  nota: IntRange<0, 10>,
+  numero_usuario: Int,
 }
 
 export interface tecnologia{
   nome: string,
-  apps: Array<aplicativo>
+  apps: Array<aplicativo>,
+  descricao: string,
 }
+

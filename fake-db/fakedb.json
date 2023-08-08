@@ -1,7 +1,36 @@
 {
   "tecnologias": [
     {
-      "hello": "world"
+      "nome": "Inteligência Artificial",
+      "descricao": "A IA é um campo do hype por motivo nenhum",
+      "apps": [
+        {
+          "nome": "Chat GPT",
+          "nota": 5,
+          "numero_usuario": 100000
+        },
+        {
+          "nome": "Vikuna",
+          "nota": 7,
+          "numero_usuario": 100
+        },
+        {
+          "nome": "Llama 2",
+          "nota": 10,
+          "numero_usuario": 1000
+        }
+      ]
+    },
+    {
+      "nome": "Aprendizado Online",
+      "descricao": "Escola Online é Incrivel",
+      "apps": [
+        {
+          "nome": "Alura",
+          "nota": 10,
+          "numero_usuario": 1000000
+        }
+      ]
     }
   ]
 }
