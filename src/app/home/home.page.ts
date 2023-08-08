@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { BackendConnectorService } from '../services/BackendConnector/backend-connector.service';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  tecnologias: Array<any> = []
 
+  constructor(private back: BackendConnectorService) {}
+
+  async ngOnInit(){
+    let req = await this.back.connect()
+
+    req.subscribe((res: any) => {
+      this.tecnologias = res
+      console.log(res)
+    })
+  }
 }

@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Listas de Tecnologias
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,18 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Listas de Tecnologias</ion-title>
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  <div *ngIf="tecnologias.length >= 1; else notConnect">
+    <ion-list #Block *ngFor="let i of tecnologias">
+      <ion-item>{{ i.hello }}</ion-item>
+    </ion-list>
   </div>
+
+  <ng-template #notConnect>
+    <p>Não Foi possivel Connectar ao Servidor </p>
+  </ng-template>
+
 </ion-content>
