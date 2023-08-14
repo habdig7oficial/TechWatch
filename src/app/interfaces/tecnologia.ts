@@ -10,5 +10,6 @@ export interface tecnologia{
   nome: string,
   apps: Array<aplicativo>,
   descricao: string,
+  favorito: boolean,
 }
 

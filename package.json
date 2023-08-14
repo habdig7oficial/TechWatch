@@ -11,6 +11,7 @@
     "test": "ng test",
     "lint": "ng lint",
 
+    "dev": "npx ionic serve --port=4200",
     "fakedb": "npx json-server fake-db/fakedb.json"
   },
   "private": true,

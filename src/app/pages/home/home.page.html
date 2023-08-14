@@ -15,7 +15,9 @@
 
   <div *ngIf="tecnologias.length >= 1; else notConnect">
     <ion-list #Block *ngFor="let tecnologia of tecnologias, index as i">
-      <ion-item>{{ i }} - {{ tecnologia.nome }}</ion-item>
+      <a [routerLink]="['/tech-expand']" [state]="tecnologia" routerLinkActive="router-link-active">
+        <ion-item>{{ i + 1 }} - {{ tecnologia.nome }}</ion-item>
+      </a>
     </ion-list>
   </div>
 
@@ -24,3 +26,5 @@
   </ng-template>
 
 </ion-content>
+
+<!--[routerLink]="['/tech-expand']" routerLinkActive="router-link-active"-->
