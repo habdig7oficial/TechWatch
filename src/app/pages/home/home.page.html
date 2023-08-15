@@ -15,15 +15,16 @@
 
   <div *ngIf="tecnologias.length >= 1; else notConnect">
     <ion-list #Block *ngFor="let tecnologia of tecnologias, index as i">
-      <ion-item>
-        <a [routerLink]="['/tech-expand']" [state]="tecnologia" routerLinkActive="router-link-active">
-          {{ i + 1 }} - {{ tecnologia.nome }}
-        </a>
-
-        <span (click)="tecnologia.favorito = !tecnologia.favorito">
+      <ion-item-sliding>
+        <ion-item>
+          <a [routerLink]="['/tech-expand']" [state]="tecnologia" routerLinkActive="router-link-active">
+            {{ i + 1 }} - {{ tecnologia.nome }}
+          </a>
+        </ion-item>
+        <ion-item-options side="start" (click)="tecnologia.favorito = !tecnologia.favorito">
           {{ tecnologia.favorito }}
-        </span>
-      </ion-item>
+        </ion-item-options>
+      </ion-item-sliding>
     </ion-list>
   </div>
 
