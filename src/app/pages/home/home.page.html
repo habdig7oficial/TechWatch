@@ -17,12 +17,13 @@
     <ion-list #Block *ngFor="let tecnologia of tecnologias, index as i">
       <ion-item-sliding>
         <ion-item>
-          <a [routerLink]="['/tech-expand']" [state]="tecnologia" routerLinkActive="router-link-active">
+          <ion-button fill="clear" [routerLink]="['/tech-expand']" [state]="tecnologia" routerLinkActive="router-link-active">
             {{ i + 1 }} - {{ tecnologia.nome }}
-          </a>
+          </ion-button>
         </ion-item>
         <ion-item-options side="start" (click)="tecnologia.favorito = !tecnologia.favorito">
-          {{ tecnologia.favorito }}
+          <ion-icon *ngIf="tecnologia.favorito === false" color="warning" name="star-outline"></ion-icon>
+          <ion-icon *ngIf="tecnologia.favorito === true" color="warning" name="star"></ion-icon>
         </ion-item-options>
       </ion-item-sliding>
     </ion-list>

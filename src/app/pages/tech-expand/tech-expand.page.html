@@ -13,9 +13,13 @@
 
   <p> {{ params.descricao }} </p>
 
-  <span (click)="params.favorito = !params.favorito">
-    {{ params.favorito }}
-  </span>
+  <ion-button fill="clear" (click)="params.favorito = !params.favorito">
+    Favorito:
+    <span>
+      <ion-icon *ngIf="params.favorito === false" color="warning" name="star-outline"></ion-icon>
+      <ion-icon *ngIf="params.favorito === true" color="warning" name="star"></ion-icon>
+    </span>
+  </ion-button>
 
   <h3>Apps Que Utilizam {{ params.nome }}:</h3>
 
