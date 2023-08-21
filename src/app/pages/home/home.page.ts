@@ -1,3 +1,5 @@
+/* src/app/pages/home/home.page.ts */
+
 import { Component, OnInit } from '@angular/core';
 import { BackendConnectorService } from '../../services/BackendConnector/backend-connector.service';
 import { Router, NavigationExtras } from '@angular/router';

@@ -1,3 +1,5 @@
+/* src/app/pages/tech-expand/tech-expand.page.ts */
+
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import { tecnologia } from 'src/app/interfaces/tecnologia';
