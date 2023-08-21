@@ -25,7 +25,11 @@
   <h3>Apps Que Utilizam {{ params.nome }}:</h3>
 
   <ion-list *ngFor="let app of params.apps, index as i">
-    <ion-item><p>{{ i + 1 }} - {{ app.nome }}</p> <p>Nota: {{ app.nota }}</p> <p>Nota: {{ app.numero_usuario }}</p> </ion-item>
+    <ion-item>
+      <p>{{ i + 1 }} - {{ app.nome }}</p> <br>
+      <p>Nota: {{ app.nota }}</p> <br>
+      <p>Nota: {{ app.numero_usuario }}</p>  <br>
+    </ion-item>
   </ion-list>
 
 </ion-content>
