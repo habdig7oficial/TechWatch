@@ -2,11 +2,11 @@
   "tecnologias": [
     {
       "nome": "Inteligência Artificial",
-      "descricao": "A IA é um campo do hype por motivo nenhum",
+      "descricao": "Inteligência Artificial (IA) é um ramo da ciência da computação que se concentra no desenvolvimento de sistemas e algoritmos capazes de realizar tarefas que normalmente exigem inteligência humana. ",
       "favorito": false,
       "apps": [
         {
-          "nome": "Chat GPT",
+          "nome": "GPT 4",
           "nota": 5,
           "numero_usuario": 100000
         },
@@ -24,27 +24,40 @@
     },
     {
       "nome": "Aprendizado Online",
-      "descricao": "Escola Online é Incrivel",
+      "descricao": "A aprendizagem on-line é uma modalidade de ensino que se utiliza da internet para transmitir o conteúdo. São utilizadas diversas ferramentas do contexto digital com o mesmo propósito: compartilhar um novo conhecimento",
       "favorito": false,
       "apps": [
         {
           "nome": "Alura",
           "nota": 10,
           "numero_usuario": 1000000
+        },
+        {
+          "nome": "Udemy",
+          "nota": 8,
+          "numero_usuario": 1000
+        },
+        {
+          "nome": "Trybe",
+          "nota": 9,
+          "numero_usuario": 10000
         }
       ]
     },
-
-
     {
-      "nome": "Aprendizado Online",
+      "nome": "Aplicativos de Saúde Pessoal",
       "descricao": "Escola Online é Incrivel",
       "favorito": false,
       "apps": [
         {
-          "nome": "Alura",
+          "nome": "MedTempo",
           "nota": 10,
-          "numero_usuario": 1000000
+          "numero_usuario": 5
+        },
+        {
+          "nome": "MedTempo",
+          "nota": 10,
+          "numero_usuario": 5
         }
       ]
     }
