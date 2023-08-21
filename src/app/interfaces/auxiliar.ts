@@ -1,4 +1,4 @@
-
+/* src/app/interfaces/auxiliar.ts */
 
 export type Int = number & { __int__: void };
 

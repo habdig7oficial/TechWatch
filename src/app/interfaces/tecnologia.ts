@@ -1,3 +1,5 @@
+/* src/app/interfaces/tecnologia.ts */
+
 import { Int, IntRange } from "./auxiliar"
 
 export interface aplicativo {
